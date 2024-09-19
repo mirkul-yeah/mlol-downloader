@@ -23,6 +23,7 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
+        args: release --clean
         workdir: dist
     - name: Upload assets
       uses: actions/upload-artifact@v3
